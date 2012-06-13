@@ -7,6 +7,8 @@
 //
 
 #import "ACAppDelegate.h"
+#import "ACMainViewController.h"
+
 
 @implementation ACAppDelegate
 
@@ -20,6 +22,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+	
+	ACMainViewController *mainViewController = [[ACMainViewController alloc] initWithNibName:NSStringFromClass([ACMainViewController class]) bundle:nil];
+	mainViewController.context = self.managedObjectContext;
+	self.window.rootViewController = mainViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -104,11 +110,17 @@
         return __persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MultipleStoresTestApplication.sqlite"];
-    
+    NSURL *documentsDirectoryStoreURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MultipleStoresTestApplication.sqlite"];
+    NSURL *mainBundleStoreURL = [[NSBundle mainBundle] URLForResource:@"MultipleStoresTestApplication" withExtension:@"sqlite"];
+	
+	NSDictionary *mainBundleStoreOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:1] forKey:NSReadOnlyPersistentStoreOption];
+	
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (
+		![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:documentsDirectoryStoreURL options:nil error:&error] ||
+		![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:mainBundleStoreURL options:mainBundleStoreOptions error:&error]
+		) {
         /*
          Replace this implementation with code to handle the error appropriately.
          

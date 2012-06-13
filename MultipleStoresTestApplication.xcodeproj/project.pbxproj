@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5130FCDC1586C1D700E7A088 /* Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130FCDB1586C1D700E7A088 /* Timestamp.m */; };
+		5130FCE41587099B00E7A088 /* MultipleStoresTestApplication.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5130FCE31587099B00E7A088 /* MultipleStoresTestApplication.sqlite */; };
 		51CA9FD91586BF1700871E54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA9FD81586BF1700871E54 /* UIKit.framework */; };
 		51CA9FDB1586BF1700871E54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA9FDA1586BF1700871E54 /* Foundation.framework */; };
 		51CA9FDD1586BF1700871E54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA9FDC1586BF1700871E54 /* CoreGraphics.framework */; };
@@ -21,6 +23,8 @@
 		51CA9FF91586BF1700871E54 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA9FDE1586BF1700871E54 /* CoreData.framework */; };
 		51CAA0011586BF1700871E54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51CA9FFF1586BF1700871E54 /* InfoPlist.strings */; };
 		51CAA0041586BF1700871E54 /* MultipleStoresTestApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CAA0031586BF1700871E54 /* MultipleStoresTestApplicationTests.m */; };
+		51CAA0181586BFDE00871E54 /* ACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CAA0161586BFDE00871E54 /* ACMainViewController.m */; };
+		51CAA0191586BFDE00871E54 /* ACMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51CAA0171586BFDE00871E54 /* ACMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,24 +38,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5130FCDA1586C1D700E7A088 /* Timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timestamp.h; sourceTree = "<group>"; };
+		5130FCDB1586C1D700E7A088 /* Timestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timestamp.m; sourceTree = "<group>"; };
+		5130FCE31587099B00E7A088 /* MultipleStoresTestApplication.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultipleStoresTestApplication.sqlite; sourceTree = "<group>"; };
 		51CA9FD41586BF1700871E54 /* MultipleStoresTestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleStoresTestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CA9FD81586BF1700871E54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51CA9FDA1586BF1700871E54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51CA9FDC1586BF1700871E54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		51CA9FDE1586BF1700871E54 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		51CA9FE21586BF1700871E54 /* MultipleStoresTestApplication-Info.plist */ = {isa = PBXFileReference; path = "MultipleStoresTestApplication-Info.plist"; sourceTree = "<group>"; };
+		51CA9FE21586BF1700871E54 /* MultipleStoresTestApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultipleStoresTestApplication-Info.plist"; sourceTree = "<group>"; };
 		51CA9FE41586BF1700871E54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51CA9FE61586BF1700871E54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		51CA9FE81586BF1700871E54 /* MultipleStoresTestApplication-Prefix.pch */ = {isa = PBXFileReference; path = "MultipleStoresTestApplication-Prefix.pch"; sourceTree = "<group>"; };
-		51CA9FE91586BF1700871E54 /* ACAppDelegate.h */ = {isa = PBXFileReference; path = ACAppDelegate.h; sourceTree = "<group>"; };
+		51CA9FE81586BF1700871E54 /* MultipleStoresTestApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultipleStoresTestApplication-Prefix.pch"; sourceTree = "<group>"; };
+		51CA9FE91586BF1700871E54 /* ACAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACAppDelegate.h; sourceTree = "<group>"; };
 		51CA9FEA1586BF1700871E54 /* ACAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACAppDelegate.m; sourceTree = "<group>"; };
 		51CA9FED1586BF1700871E54 /* MultipleStoresTestApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultipleStoresTestApplication.xcdatamodel; sourceTree = "<group>"; };
 		51CA9FF41586BF1700871E54 /* MultipleStoresTestApplicationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleStoresTestApplicationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51CA9FF51586BF1700871E54 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		51CA9FFE1586BF1700871E54 /* MultipleStoresTestApplicationTests-Info.plist */ = {isa = PBXFileReference; path = "MultipleStoresTestApplicationTests-Info.plist"; sourceTree = "<group>"; };
+		51CA9FFE1586BF1700871E54 /* MultipleStoresTestApplicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultipleStoresTestApplicationTests-Info.plist"; sourceTree = "<group>"; };
 		51CAA0001586BF1700871E54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		51CAA0021586BF1700871E54 /* MultipleStoresTestApplicationTests.h */ = {isa = PBXFileReference; path = MultipleStoresTestApplicationTests.h; sourceTree = "<group>"; };
+		51CAA0021586BF1700871E54 /* MultipleStoresTestApplicationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleStoresTestApplicationTests.h; sourceTree = "<group>"; };
 		51CAA0031586BF1700871E54 /* MultipleStoresTestApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleStoresTestApplicationTests.m; sourceTree = "<group>"; };
+		51CAA0151586BFDE00871E54 /* ACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMainViewController.h; sourceTree = "<group>"; };
+		51CAA0161586BFDE00871E54 /* ACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMainViewController.m; sourceTree = "<group>"; };
+		51CAA0171586BFDE00871E54 /* ACMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +124,15 @@
 		51CA9FE01586BF1700871E54 /* MultipleStoresTestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5130FCE31587099B00E7A088 /* MultipleStoresTestApplication.sqlite */,
 				51CA9FE91586BF1700871E54 /* ACAppDelegate.h */,
 				51CA9FEA1586BF1700871E54 /* ACAppDelegate.m */,
+				51CAA0151586BFDE00871E54 /* ACMainViewController.h */,
+				51CAA0161586BFDE00871E54 /* ACMainViewController.m */,
+				51CAA0171586BFDE00871E54 /* ACMainViewController.xib */,
 				51CA9FEC1586BF1700871E54 /* MultipleStoresTestApplication.xcdatamodeld */,
+				5130FCDA1586C1D700E7A088 /* Timestamp.h */,
+				5130FCDB1586C1D700E7A088 /* Timestamp.m */,
 				51CA9FE11586BF1700871E54 /* Supporting Files */,
 			);
 			path = MultipleStoresTestApplication;
@@ -224,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51CA9FE51586BF1700871E54 /* InfoPlist.strings in Resources */,
+				51CAA0191586BFDE00871E54 /* ACMainViewController.xib in Resources */,
+				5130FCE41587099B00E7A088 /* MultipleStoresTestApplication.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +279,8 @@
 				51CA9FE71586BF1700871E54 /* main.m in Sources */,
 				51CA9FEB1586BF1700871E54 /* ACAppDelegate.m in Sources */,
 				51CA9FEE1586BF1700871E54 /* MultipleStoresTestApplication.xcdatamodeld in Sources */,
+				51CAA0181586BFDE00871E54 /* ACMainViewController.m in Sources */,
+				5130FCDC1586C1D700E7A088 /* Timestamp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +442,7 @@
 				51CAA0091586BF1700871E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51CAA00A1586BF1700871E54 /* Build configuration list for PBXNativeTarget "MultipleStoresTestApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +451,7 @@
 				51CAA00C1586BF1700871E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
