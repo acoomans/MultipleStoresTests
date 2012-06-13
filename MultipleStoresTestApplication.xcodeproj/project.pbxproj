@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51095AD11589539100D52547 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 51095AD01589539100D52547 /* README */; };
 		5130FCDC1586C1D700E7A088 /* Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130FCDB1586C1D700E7A088 /* Timestamp.m */; };
 		5130FCE41587099B00E7A088 /* MultipleStoresTestApplication.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5130FCE31587099B00E7A088 /* MultipleStoresTestApplication.sqlite */; };
 		51CA9FD91586BF1700871E54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CA9FD81586BF1700871E54 /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51095AD01589539100D52547 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5130FCDA1586C1D700E7A088 /* Timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timestamp.h; sourceTree = "<group>"; };
 		5130FCDB1586C1D700E7A088 /* Timestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timestamp.m; sourceTree = "<group>"; };
 		5130FCE31587099B00E7A088 /* MultipleStoresTestApplication.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultipleStoresTestApplication.sqlite; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		51CA9FC91586BF1700871E54 = {
 			isa = PBXGroup;
 			children = (
+				51095AD01589539100D52547 /* README */,
 				51CA9FE01586BF1700871E54 /* MultipleStoresTestApplication */,
 				51CA9FFC1586BF1700871E54 /* MultipleStoresTestApplicationTests */,
 				51CA9FD71586BF1700871E54 /* Frameworks */,
@@ -242,6 +245,7 @@
 				51CA9FE51586BF1700871E54 /* InfoPlist.strings in Resources */,
 				51CAA0191586BFDE00871E54 /* ACMainViewController.xib in Resources */,
 				5130FCE41587099B00E7A088 /* MultipleStoresTestApplication.sqlite in Resources */,
+				51095AD11589539100D52547 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
