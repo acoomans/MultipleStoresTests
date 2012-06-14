@@ -1,6 +1,6 @@
 MultipleStoresTestApplication is a sample application to test and show you can use to two different persistance stores; a pre-populated read-only store in the main bundle and a read-write store in the document directory.
 
-This can be useful if your pre-populated store contains lots of data (ie pictures, audio or video). In this scenario, you don't want to copy the whole store to the documents directory because it would use twice as much disk space. 
+This can be useful if your pre-populated store contains lots of data (putting binary data like pictures, audio or video is probably not a good idea, you'll want to put them in the filesystem). In this scenario, you don't want to copy the whole store to the documents directory because it would use twice as much disk space. 
 The solution is to use two persistence stores. The pre-populated store in the main bundle is marked with the read-only option. The persistence store coordinator will automatically route any context save to the new store in the documents directory. This solution allow to have only one context and make the fetch requests only once.
 
 Note that the pre-populated store can't be modified, therefore the pre-populated data can't be deleted. One workaround to this would be to use timestamps to mark up-to-date data.
