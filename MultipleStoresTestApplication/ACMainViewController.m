@@ -84,9 +84,10 @@
 	timestamp.date = [NSDate date];
 	//timestamp.color = [UIColor redColor];
 	timestamp.color = [UIColor blueColor];
+	
 	NSError *error = nil;
-	[self.context save:&error];
-	if (error) {
+	BOOL saved = [self.context save:&error];
+	if (!saved) {
 		NSLog(@"%@", error);
 	}
 	[self getData];
